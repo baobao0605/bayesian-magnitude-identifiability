@@ -1,0 +1,53 @@
+{
+  "scope": "AI-assisted mathematical re-derivation with exact rational and deterministic numerical checks; not human peer review or recovery simulation",
+  "python": "3.12.14",
+  "standard_library_only": true,
+  "exact_rational_checks": {
+    "all_positive_weight_odds_minors": true,
+    "positive_factorization_reconstructs_all_cells": true,
+    "calibrated_bridge_inverse": true,
+    "choice_ridge_and_unknown_gain_mean_ridge": true,
+    "shared_context_line": true,
+    "pre_bias_population_moment_inverse": true,
+    "post_bias_full_gaussian_identity": true,
+    "pre_bias_sd_change": true,
+    "sparse_design_distributions_match": true,
+    "sparse_design_bias_ratio_is_not_constant": true
+  },
+  "all_exact_rational_checks_true": true,
+  "floating_point_residuals": {
+    "classical_choice_probability_max_error": 1.1102230246251565e-16,
+    "distance_contrast_minor_max_error": 2.6645352591003757e-15,
+    "temporal_contrast_ratio_max_error": 1.7763568394002505e-15,
+    "free_scale_mean_path_max_error": 8.881784197001252e-16,
+    "two_time_log_choice_path_max_error": 1.1102230246251565e-16
+  },
+  "sparse_design_counterexample": [
+    {
+      "t": "1",
+      "ell": "1",
+      "mean_pre": "3/10",
+      "mean_post": "3/10",
+      "sd_pre": "3/50",
+      "sd_post": "3/50",
+      "post_bias_over_t": "-7/20"
+    },
+    {
+      "t": "2",
+      "ell": "3",
+      "mean_pre": "7/10",
+      "mean_post": "7/10",
+      "sd_pre": "7/50",
+      "sd_post": "7/50",
+      "post_bias_over_t": "-3/8"
+    }
+  ],
+  "free_scale_path": {
+    "original_p_plus_q": 1.0,
+    "new_p_plus_q": 1.4577074820528195
+  },
+  "random_draws": 0,
+  "fit_runs": 0,
+  "parameter_recovery": false,
+  "model_recovery": false
+}

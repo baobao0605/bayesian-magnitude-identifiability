@@ -1,0 +1,11 @@
+{
+  "source": "Existing synthetic_ridge.csv and the original deterministic Figure S2 equations",
+  "ridge_rows": 81,
+  "ridge_loglikelihood_range": 5.684341886080802e-14,
+  "figures": [
+    "figureS1_choice_ridge",
+    "figureS2_mean_vs_likelihood"
+  ],
+  "new_random_draws": 0,
+  "new_fits": 0
+}

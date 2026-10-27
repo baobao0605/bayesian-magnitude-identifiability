@@ -1,0 +1,92 @@
+{
+  "started_utc": "2026-10-27T02:53:51+00:00",
+  "status": "completed",
+  "python": "3.12.14",
+  "mode": "supplied data and outputs only",
+  "new_recovery_simulation_requested": false,
+  "legacy_random_illustration_rerun": false,
+  "steps": [
+    {
+      "name": "exact_and_deterministic_checks",
+      "command": [
+        "python",
+        "code/rederive_core.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.045,
+      "stdout": "01_exact_and_deterministic_checks.stdout.txt",
+      "stderr": "01_exact_and_deterministic_checks.stderr.txt"
+    },
+    {
+      "name": "symbolic_relations",
+      "command": [
+        "python",
+        "code/check_claim_relations.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 2.768,
+      "stdout": "02_symbolic_relations.stdout.txt",
+      "stderr": "02_symbolic_relations.stderr.txt"
+    },
+    {
+      "name": "saved_recovery_results",
+      "command": [
+        "python",
+        "code/validate_saved_results.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 2.854,
+      "stdout": "03_saved_recovery_results.stdout.txt",
+      "stderr": "03_saved_recovery_results.stderr.txt"
+    },
+    {
+      "name": "interval_tail_summary",
+      "command": [
+        "python",
+        "code/recovery_tail_diagnostics.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.165,
+      "stdout": "04_interval_tail_summary.stdout.txt",
+      "stderr": "04_interval_tail_summary.stderr.txt"
+    },
+    {
+      "name": "main_figures",
+      "command": [
+        "python",
+        "code/make_revision_figures.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 6.667,
+      "stdout": "05_main_figures.stdout.txt",
+      "stderr": "05_main_figures.stderr.txt"
+    },
+    {
+      "name": "saved_supplementary_illustrations",
+      "command": [
+        "python",
+        "code/plot_saved_illustrations.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 3.007,
+      "stdout": "06_saved_supplementary_illustrations.stdout.txt",
+      "stderr": "06_saved_supplementary_illustrations.stderr.txt"
+    },
+    {
+      "name": "recovery_figure",
+      "command": [
+        "python",
+        "code/recovery_simulation.py",
+        "--plot-only"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 2.627,
+      "stdout": "07_recovery_figure.stdout.txt",
+      "stderr": "07_recovery_figure.stderr.txt"
+    }
+  ],
+  "finished_utc": "2026-10-27T02:54:09+00:00",
+  "new_simulation_replicates": 0,
+  "new_joint_fits": 0,
+  "legacy_random_parameter_draws": 0
+}

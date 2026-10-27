@@ -1,0 +1,1 @@
+{"figures": ["figure1_empirical_constraints", "figure2_noise_reference"], "source": "Analytical equations and stated parameter values", "new_fit": false, "new_random_draws": 0}

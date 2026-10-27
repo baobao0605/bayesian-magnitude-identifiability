@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and this software if you use these materials. Replace this record with the final publication details when available."
+type: software
+title: "Reproducibility materials for From observational equivalence to empirical commitments: Bayesian mechanisms in magnitude estimation"
+authors:
+  - family-names: Ji
+    given-names: Yongzhang
+    orcid: "https://orcid.org/0009-0006-4111-2000"
+    affiliation: "Faculty of Psychology, Southwest University, Chongqing, China"
+abstract: "Deterministic mathematical checks, synthetic data, saved parameter-recovery results, and plotting code for the accompanying theoretical manuscript. No new human participant data are included."
+keywords:
+  - magnitude estimation
+  - kappa effect
+  - Bayesian perception
+  - identifiability
+  - parameter recovery

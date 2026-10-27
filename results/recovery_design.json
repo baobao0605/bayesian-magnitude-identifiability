@@ -1,0 +1,132 @@
+{
+  "design_id": "KAPPA-BRIDGE-RECOVERY-20261026",
+  "frozen_before_simulation": true,
+  "purpose": "Controlled finite-sample recovery of a calibrated cross-task bridge; not Chen 2024 production-noise replication, human evidence, or model recovery",
+  "replicates": 200,
+  "seed": 2026102617,
+  "truth": {
+    "w": 0.65,
+    "v_degrees_per_second": 0.5,
+    "w_m": 0.2,
+    "g": 1.0,
+    "B_seconds": 0.1
+  },
+  "choice": {
+    "delta_t_seconds": [
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2
+    ],
+    "delta_distance_degrees": [
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2
+    ],
+    "time_midpoint_seconds": 0.8,
+    "distance_midpoint_degrees": 0.3,
+    "trials_per_cell": 24,
+    "independent_bernoulli_trials": true,
+    "lapse": 0.0
+  },
+  "reproduction": {
+    "duration_seconds": 0.8,
+    "distances_degrees": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "trials_per_distance": 20,
+    "known_additive_sd_seconds": 0.12,
+    "free_intercept": true,
+    "noise_is_independent_of_pre_bias_estimate": true
+  },
+  "gain_calibration": {
+    "conditions": [
+      "known_gain",
+      "noisy_gain"
+    ],
+    "known_gain": 1.0,
+    "independent_observations": 16,
+    "known_observation_sd": 0.6,
+    "mean_standard_error": 0.15,
+    "same_behavioral_data_across_conditions": true
+  },
+  "estimation": {
+    "method": "joint maximum likelihood; response intercept profiled analytically; L-BFGS-B with analytic gradients",
+    "parameterization": [
+      "log_b",
+      "log_s",
+      "logit_w",
+      "log_g_when_noisy"
+    ],
+    "bounds": {
+      "b": [
+        0.01,
+        100.0
+      ],
+      "s": [
+        0.01,
+        5.0
+      ],
+      "logit_w": [
+        -12.0,
+        12.0
+      ],
+      "g": [
+        0.05,
+        20.0
+      ]
+    },
+    "ftol": 1e-12,
+    "gtol": 1e-08,
+    "maxiter": 1000,
+    "near_bound_tolerance_transformed": 0.0001,
+    "max_information_condition_number": 1000000000000.0,
+    "max_absolute_score_for_numerical_success": 0.0001,
+    "starts": "observable likelihood fit and two fixed interior weight starts (.3,.8); minimum finite objective retained"
+  },
+  "intervals": {
+    "level": 0.95,
+    "information": "expected Fisher information at joint MLE after profiling the intercept",
+    "scales": {
+      "b": "log",
+      "s": "log",
+      "w": "logit",
+      "v": "log, exactly -log_b-logit_w",
+      "w_m": "log, log_s+0.5*log(w)",
+      "g": "log"
+    },
+    "calibration_propagated": true,
+    "noisy_gain_extra_diagnostic": "same estimate; condition on fitted gain in the information matrix, intentionally ignoring calibration uncertainty",
+    "boundary_intervals": "not reported; retained as unavailable in the all-replicate success-and-coverage denominator"
+  },
+  "reporting": {
+    "point_metrics": [
+      "bias",
+      "rmse",
+      "median_absolute_error"
+    ],
+    "interval_metrics": [
+      "valid_interval_count",
+      "coverage_given_valid",
+      "success_and_coverage_all_replicates",
+      "coverage_mcse",
+      "median_width",
+      "mean_width"
+    ],
+    "failures": [
+      "optimizer_failure",
+      "near_boundary",
+      "nonfinite_fit",
+      "invalid_unconstrained_bridge_inverse",
+      "invalid_information"
+    ],
+    "design_not_changed_after_results": true
+  }
+}

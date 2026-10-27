@@ -1,0 +1,39 @@
+{
+  "purpose": "Symbolic identities and deterministic illustrations, not fitted recovery",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "symbolic_identity_count": 18,
+  "symbolic_residuals": {
+    "weight_odds_minor": "0",
+    "positive_factorization_converse": "0",
+    "classical_choice_reduction": "0",
+    "calibrated_bridge_weight": "0",
+    "calibrated_bridge_speed": "0",
+    "calibrated_bridge_noise_squared": "0",
+    "shared_context_line": "0",
+    "unknown_gain_preserves_reproduction_time": "0",
+    "unknown_gain_preserves_reproduction_slope": "0",
+    "post_bias_mean_equality": "0",
+    "post_bias_variance_equality": "0",
+    "pre_bias_sd_change": "0",
+    "pre_post_overlap_estimate": "0",
+    "random_estimate_total_variance": "0",
+    "distance_contrast_minor": "0",
+    "logarithmic_curvature": "0",
+    "generalized_mean_first_order": "0",
+    "arithmetic_mean_scale_reduction": "0"
+  },
+  "deterministic_examples": {
+    "post_bias_max_log_density_error": 2.220446049250313e-15,
+    "pre_bias_sd_difference_seconds": 0.03600000000000003,
+    "log_contrast_max_minor_error": 1.1102230246251565e-15
+  },
+  "new_random_draws": 0,
+  "participant_data_used": false,
+  "parameter_recovery_run": false,
+  "model_recovery_run": false
+}

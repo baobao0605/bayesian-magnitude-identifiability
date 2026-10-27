@@ -1,0 +1,8 @@
+{
+  "method": "deterministic central differences at fixed test parameters; no simulation data used",
+  "step": 1e-05,
+  "gradient_max_relative_error": 4.214208915982876e-10,
+  "expected_information_max_relative_error": 1.1370249521597814e-10,
+  "required_relative_tolerance": 1e-06,
+  "passed": true
+}

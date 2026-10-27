@@ -1,0 +1,86 @@
+{
+  "known_gain": {
+    "valid_intervals": 200,
+    "width_mean": 0.7316938159841704,
+    "width_median": 0.6827457764859426,
+    "width_q90": 0.8819218455484606,
+    "width_q95": 1.055004245074533,
+    "width_q99": 1.258662959148791,
+    "width_max": 3.2382539032769846,
+    "maximum_width_replicate": 0,
+    "maximum_width_estimate_v": 0.10934372499389933,
+    "maximum_width_estimate_w": 0.9165609291762006,
+    "maximum_width_interval": [
+      0.0036879286598423024,
+      3.2419418319368267
+    ],
+    "information_condition_number": 1414.8378992446574
+  },
+  "noisy_gain": {
+    "valid_intervals": 197,
+    "width_mean": 10082.979560856098,
+    "width_median": 1.3083376477061996,
+    "width_q90": 3.4360577226840854,
+    "width_q95": 7.953670474931992,
+    "width_q99": 42364.42418264638,
+    "width_max": 1871735.067181572,
+    "maximum_width_replicate": 108,
+    "maximum_width_estimate_v": 0.02979899987313291,
+    "maximum_width_estimate_w": 0.9730755724954084,
+    "maximum_width_interval": [
+      4.74415641940225e-10,
+      1871735.0671815726
+    ],
+    "information_condition_number": 51998.42031582874
+  },
+  "noisy_gain_ignored": {
+    "valid_intervals": 197,
+    "width_mean": 15.466180972888314,
+    "width_median": 0.7051435954231621,
+    "width_q90": 1.0757823537271558,
+    "width_q95": 1.675001654376975,
+    "width_q99": 168.0038618389665,
+    "width_max": 2283.505297560345,
+    "maximum_width_replicate": 108,
+    "maximum_width_estimate_v": 0.02979899987313291,
+    "maximum_width_estimate_w": 0.9730755724954084,
+    "maximum_width_interval": [
+      3.888672359273527e-07,
+      2283.505297949212
+    ],
+    "information_condition_number": 12622.459376683602
+  },
+  "boundary_fits": [
+    {
+      "replicate": 11,
+      "regime": "noisy_gain",
+      "w": 0.9999938558253978,
+      "v": 5.546409565026096e-06,
+      "b": 1.107781940964415,
+      "g": 0.6038921592100531,
+      "unconstrained_w": 1.0493004301841944,
+      "active_coordinates": "2"
+    },
+    {
+      "replicate": 77,
+      "regime": "noisy_gain",
+      "w": 0.9999938558253978,
+      "v": 6.325848929364784e-06,
+      "b": 0.9712866086331253,
+      "g": 0.7424016025589288,
+      "unconstrained_w": 1.0475360131974307,
+      "active_coordinates": "2"
+    },
+    {
+      "replicate": 84,
+      "regime": "noisy_gain",
+      "w": 0.9999938558253978,
+      "v": 6.804321921012259e-06,
+      "b": 0.9029867229465468,
+      "g": 0.8133553649174688,
+      "unconstrained_w": 1.1103199355417486,
+      "active_coordinates": "2"
+    }
+  ],
+  "note": "Post-run descriptive tail diagnostics from the fixed results; no design, fit, interval, exclusion or random draw changed."
+}

@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "scope": "Saved data and estimates only; likelihood and intervals evaluated at existing fitted points, and summaries recomputed. No fitting or sampling.",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "replicates": 200,
+  "fit_rows": 400,
+  "interval_rows": 3200,
+  "optimizer_start_rows": 1200,
+  "data_shapes": {
+    "choices": [
+      200,
+      25,
+      24
+    ],
+    "reproductions": [
+      200,
+      100
+    ],
+    "calibrations": [
+      200,
+      16
+    ],
+    "delta_t": [
+      25
+    ],
+    "delta_distance": [
+      25
+    ],
+    "choice_t1": [
+      25
+    ],
+    "choice_t2": [
+      25
+    ],
+    "reproduction_distance": [
+      100
+    ],
+    "true_choice_probability": [
+      25
+    ]
+  },
+  "fits_json_and_csv_agree": true,
+  "saved_estimates_satisfy_parameter_transformations": true,
+  "saved_objectives_match_raw_data_likelihoods": true,
+  "maximum_absolute_objective_difference": 1.1368683772161603e-13,
+  "selected_start_matches_minimum_saved_objective": true,
+  "recomputed_intervals_match_saved_intervals": true,
+  "recomputed_summaries_match_saved_summaries": true,
+  "relative_comparison_tolerance": 1e-08,
+  "absolute_comparison_tolerance": 1e-09,
+  "deterministic_score_and_information_checks": {
+    "method": "deterministic central differences at fixed test parameters; no simulation data used",
+    "step": 1e-05,
+    "gradient_max_relative_error": 4.214208915982876e-10,
+    "expected_information_max_relative_error": 1.1370249521597814e-10,
+    "required_relative_tolerance": 1e-06,
+    "passed": true
+  },
+  "speed_summary": {
+    "known_gain": {
+      "rmse": 0.14747647789189508,
+      "covered_count": 190,
+      "valid_interval_count": 200,
+      "near_boundary_count": 0
+    },
+    "noisy_gain": {
+      "rmse": 0.2550370868526295,
+      "covered_count": 187,
+      "valid_interval_count": 197,
+      "near_boundary_count": 3
+    },
+    "noisy_gain_ignored": {
+      "rmse": 0.2550370868526295,
+      "covered_count": 166,
+      "valid_interval_count": 197,
+      "near_boundary_count": 3
+    }
+  },
+  "new_random_draws": 0,
+  "new_fits": 0,
+  "new_simulation_replicates": 0,
+  "human_participant_data": false
+}

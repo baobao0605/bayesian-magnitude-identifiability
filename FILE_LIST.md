@@ -1,6 +1,6 @@
 # Repository file inventory
 
-This inventory lists the 57 delivered files. Runtime caches and temporary logs belong under the ignored `build/` directory; the actual preparation run is retained under `results/execution/`.
+This inventory lists the 59 repository files. Runtime caches and temporary logs belong under the ignored `build/` directory; the actual preparation run is retained under `results/execution/`.
 
 | Relative path | Contents |
 |---|---|
@@ -9,6 +9,8 @@ This inventory lists the 57 delivered files. Runtime caches and temporary logs b
 | `ENVIRONMENT.md` | Repository guide or metadata |
 | `FILE_LIST.md` | Repository guide or metadata |
 | `GITHUB_RELEASE.md` | Repository guide or metadata |
+| `LICENSE` | MIT software license |
+| `LICENSE-DATA.md` | CC BY 4.0 attribution license statement for data, figures, and documentation |
 | `LICENSING.md` | Repository guide or metadata |
 | `README.md` | Repository guide or metadata |
 | `code/check_claim_relations.py` | Executable source |

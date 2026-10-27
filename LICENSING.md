@@ -1,14 +1,18 @@
-# License decision before public release
+# Licensing of the reproducibility repository
 
-The project license awaits the author's decision. The following options can be considered before public release.
+The proposed licensing split for https://github.com/baobao0605/bayesian-magnitude-identifiability is:
 
-Suggested choices to consider are:
+- **Software source (`code/`):** MIT License (`LICENSE`).
+- **Author-owned synthetic data, saved numerical results, figures, and repository documentation:**
+  Creative Commons Attribution 4.0 International (`LICENSE-DATA.md`).
+- **Third-party Python dependencies:** their respective licenses; dependencies are not redistributed.
+- **Manuscript, Supplement, or referenced research PDFs:** not included in the repository and not
+  licensed by these files.
 
-- **Original software:** the MIT License, a permissive software license. Official text: https://opensource.org/license/mit
-- **Synthetic datasets, result tables, figures, and documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0), if the author wants attribution-based reuse of these materials. Official terms: https://creativecommons.org/licenses/by/4.0/
+The author should confirm that this is the intended grant of permission and that the included files
+may be licensed under these terms **before uploading the proposed license files**. MIT permits
+modification, redistribution, and commercial reuse with its conditions. CC BY 4.0 also permits
+commercial reuse with attribution and other license conditions.
 
-Before release, the author should confirm authority to license the included materials, choose the license or licenses, and add the actual license text and copyright information. If using different licenses for code and data, state the division explicitly in the README and license files. Update the README to reflect the chosen terms when the license files are added.
-
-The repository contains project code, synthetic data, generated figures, and documentation. It does not redistribute cited papers, participant data, third-party numerical packages, or bundled fonts. Required Python packages are installed separately and retain their own licenses. The accompanying article and Supplement are provided in the submission package and are not copied into this public-code directory.
-
-AI assistance does not replace the author's review of the material or the license decision. The research and writing uses of AI are described in the article's disclosures.
+These licenses do not establish any journal's license for a future published article.
+AI-assisted verification and code development do not replace author oversight or license decisions.

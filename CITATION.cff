@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the accompanying manuscript and this software if you use these materials. Replace this record with the final publication details when available."
 type: software
+url: "https://github.com/baobao0605/bayesian-magnitude-identifiability"
 title: "Reproducibility materials for From observational equivalence to empirical commitments: Bayesian mechanisms in magnitude estimation"
 authors:
   - family-names: Ji

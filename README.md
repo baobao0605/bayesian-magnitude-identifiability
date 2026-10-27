@@ -118,4 +118,16 @@ Some interior log-Wald intervals are extremely wide. For propagated noisy-gain i
 
 Exact proofs, deterministic code checks, finite-sample recovery, and empirical mechanism validation are distinct. The numerical checks support implementation consistency; they do not establish a human mechanism. AI assisted mathematical verification, code development, literature work, and writing, as disclosed in the manuscript. Parallel AI checks are not independent human peer review.
 
-`CITATION.cff` supplies the author's identity and project title. Add the repository URL and final article details when available. See `LICENSING.md` for the license choices to resolve before public release.
+`CITATION.cff` supplies the author's identity and project title. Add the repository URL and final article details when available. **Repository:** https://github.com/baobao0605/bayesian-magnitude-identifiability
+
+## License
+
+The software scripts under `code/` are released under the **MIT License** (see `LICENSE`).
+The author-owned synthetic data, numerical results, figures, and documentation are released under
+**Creative Commons Attribution 4.0 International (CC BY 4.0)** (see `LICENSE-DATA.md`).
+The manuscript and Supplement are not part of this repository. These terms concern only
+materials the author has the right to license; dependencies retain their respective licenses.
+
+The accompanying paper is not yet published. `CITATION.cff` identifies this software repository;
+a final article citation can be added after publication. A versioned GitHub Release can provide
+a fixed code-and-data snapshot for the manuscript. See `GITHUB_RELEASE.md`.
